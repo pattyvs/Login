@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800">
+  <a href="/logout">LOGOUT</a>
+  <h1 >Hola {{ nombre }} bienvenido al Complejo Turistico de Itaipú Binacional</h1>
+    <iframe
+  width="1280"
+  height="720"
+  frameborder="0" style="border:0"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/{{ mode }}?key={{ api_key }}&q={{ p }}"
+  allowfullscreen>
+</iframe>
+</body>
+</html>
